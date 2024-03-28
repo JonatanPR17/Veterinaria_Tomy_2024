@@ -52,4 +52,13 @@ class User extends Authenticatable
             }
         );
     }
+    
+    ///////////
+    protected function nombre(): Attribute
+    {
+        return new Attribute(
+            get: fn($value) => ucwords($value),
+            set: fn($value) => strtolower($value)  
+        );
+    }
 }

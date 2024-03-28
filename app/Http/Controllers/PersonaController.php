@@ -11,7 +11,6 @@ class PersonaController extends Controller
     //Esta es la funcion para la ruta donde tendremos a todas las persona
     public function index()
     {
-        $personas = Persona::orderBy('id', 'asc')->get();
         return view('persona.index' , compact ('personas'));
     }
 

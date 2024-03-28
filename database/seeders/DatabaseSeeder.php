@@ -21,5 +21,13 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         Persona::factory(300)->create();
+
+
     }
+
+    /*public function run (): void
+    {
+       $this->call(PersonaSeeder::class);
+
+    }*/
 }

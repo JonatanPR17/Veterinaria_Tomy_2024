@@ -4,6 +4,7 @@
 
 @section('contenido')
     <h1>En esta tabla vere todos los registros de las personas</h1>
+    <a href="">Crear Persona</a>
     <table border="1px">
         <thead>
             <th>ID</th>
@@ -43,7 +44,7 @@
                         {{$persona->contraseña}}
                     </td>
                 </tr>
-            @endforeach
+                @endforeach
         </tbody>
-    </table>   
+    </table>
 @endsection
